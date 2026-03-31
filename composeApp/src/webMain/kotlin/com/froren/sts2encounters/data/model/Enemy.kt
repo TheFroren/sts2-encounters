@@ -9,11 +9,19 @@ data class Enemy(
     val id: EnemyId,
     val name: String,
 
-    val healthRange: HealthRange,
+    val health: HealthStat,
+    val healthAscension: HealthStat,
 )
+
+sealed interface HealthStat
 
 @Immutable
 data class HealthRange(
     val min: Int,
     val max: Int,
-)
+): HealthStat
+
+@Immutable
+data class HealthConstant(
+    val constant: Int,
+): HealthStat

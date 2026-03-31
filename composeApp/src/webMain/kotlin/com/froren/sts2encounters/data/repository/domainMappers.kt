@@ -5,6 +5,7 @@ import com.froren.sts2encounters.data.dto.EnemyDto
 import com.froren.sts2encounters.data.model.Enemy
 import com.froren.sts2encounters.data.model.EnemyId
 import com.froren.sts2encounters.data.model.GameData
+import com.froren.sts2encounters.data.model.HealthConstant
 import com.froren.sts2encounters.data.model.HealthRange
 
 fun DatabaseDto.toGameData(): GameData {
@@ -18,5 +19,14 @@ fun DatabaseDto.toGameData(): GameData {
 fun EnemyDto.toEnemy() = Enemy(
     id = EnemyId(id),
     name = name,
-    healthRange = HealthRange(hpMin, hpMax),
+    health =
+        if (hpMin == hpMax)
+            HealthConstant(hpMin)
+        else
+            HealthRange(hpMin, hpMax),
+    healthAscension =
+        if (hpMinAsc == hpMaxAsc)
+            HealthConstant(hpMinAsc)
+        else
+            HealthRange(hpMinAsc, hpMaxAsc),
 )

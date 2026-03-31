@@ -1,10 +1,589 @@
 {
+  "gameVersion": "v0.101.0",
   "enemies": [
     {
-      "id": "test_enemy",
-      "name": "Test Enemy",
+      "id": "axebot",
+      "name": "Axebot",
+      "hpMin": 40,
+      "hpMax": 44,
+      "hpMinAsc": 42,
+      "hpMaxAsc": 46
+    },
+    {
+      "id": "bowlbug_egg",
+      "name": "Bowlbug (Egg)",
+      "hpMin": 21,
+      "hpMax": 22,
+      "hpMinAsc": 23,
+      "hpMaxAsc": 24
+    },
+    {
+      "id": "bowlbug_nectar",
+      "name": "Bowlbug (Nectar)",
+      "hpMin": 35,
+      "hpMax": 38,
+      "hpMinAsc": 36,
+      "hpMaxAsc": 39
+    },
+    {
+      "id": "bowlbug_rock",
+      "name": "Bowlbug (Rock)",
+      "hpMin": 45,
+      "hpMax": 48,
+      "hpMinAsc": 46,
+      "hpMaxAsc": 49
+    },
+    {
+      "id": "bowlbug_silk",
+      "name": "Bowlbug (Silk)",
+      "hpMin": 40,
+      "hpMax": 43,
+      "hpMinAsc": 41,
+      "hpMaxAsc": 44
+    },
+    {
+      "id": "calcified_cultist",
+      "name": "Calcified Cultist",
+      "hpMin": 38,
+      "hpMax": 41,
+      "hpMinAsc": 39,
+      "hpMaxAsc": 42
+    },
+    {
+      "id": "chomper",
+      "name": "Chomper",
+      "hpMin": 60,
+      "hpMax": 64,
+      "hpMinAsc": 63,
+      "hpMaxAsc": 67
+    },
+    {
+      "id": "corpse_slug",
+      "name": "Corpse Slug",
+      "hpMin": 25,
+      "hpMax": 27,
+      "hpMinAsc": 27,
+      "hpMaxAsc": 29
+    },
+    {
+      "id": "cubex_construct",
+      "name": "Cubex Construct",
+      "hpMin": 65,
+      "hpMax": 65,
+      "hpMinAsc": 70,
+      "hpMaxAsc": 70
+    },
+    {
+      "id": "damp_cultist",
+      "name": "Damp Cultist",
+      "hpMin": 51,
+      "hpMax": 53,
+      "hpMinAsc": 52,
+      "hpMaxAsc": 54
+    },
+    {
+      "id": "devoted_sculptor",
+      "name": "Devoted Sculptor",
+      "hpMin": 162,
+      "hpMax": 162,
+      "hpMinAsc": 172,
+      "hpMaxAsc": 172
+    },
+    {
+      "id": "exoskeleton",
+      "name": "Exoskeleton",
+      "hpMin": 24,
+      "hpMax": 28,
+      "hpMinAsc": 25,
+      "hpMaxAsc": 29
+    },
+    {
+      "id": "fabricator",
+      "name": "Fabricator",
+      "hpMin": 150,
+      "hpMax": 150,
+      "hpMinAsc": 155,
+      "hpMaxAsc": 155
+    },
+    {
+      "id": "guardbot",
+      "name": "Guardbot",
+      "hpMin": 16,
+      "hpMax": 20,
+      "hpMinAsc": 17,
+      "hpMaxAsc": 21
+    },
+    {
+      "id": "noisebot",
+      "name": "Noisebot",
+      "hpMin": 18,
+      "hpMax": 23,
+      "hpMinAsc": 19,
+      "hpMaxAsc": 24
+    },
+    {
+      "id": "stabbot",
+      "name": "Stabbot",
+      "hpMin": 18,
+      "hpMax": 23,
+      "hpMinAsc": 19,
+      "hpMaxAsc": 24
+    },
+    {
+      "id": "zapbot",
+      "name": "Zapbot",
+      "hpMin": 18,
+      "hpMax": 23,
+      "hpMinAsc": 19,
+      "hpMaxAsc": 24
+    },
+    {
+      "id": "fake_merchant",
+      "name": "Fake Merchant",
+      "hpMin": 165,
+      "hpMax": 165,
+      "hpMinAsc": 175,
+      "hpMaxAsc": 175
+    },
+    {
+      "id": "flyconid",
+      "name": "Flyconid",
+      "hpMin": 47,
+      "hpMax": 49,
+      "hpMinAsc": 51,
+      "hpMaxAsc": 53
+    },
+    {
+      "id": "fogmog",
+      "name": "Fogmog",
+      "hpMin": 74,
+      "hpMax": 74,
+      "hpMinAsc": 78,
+      "hpMaxAsc": 78
+    },
+    {
+      "id": "eye_with_teeth",
+      "name": "Eye with Teeth",
+      "hpMin": 6,
+      "hpMax": 6,
+      "hpMinAsc": 6,
+      "hpMaxAsc": 6
+    },
+    {
+      "id": "fossil_stalker",
+      "name": "Fossil Stalker",
+      "hpMin": 51,
+      "hpMax": 53,
+      "hpMinAsc": 54,
+      "hpMaxAsc": 56
+    },
+    {
+      "id": "frog_knight",
+      "name": "Frog Knight",
+      "hpMin": 191,
+      "hpMax": 191,
+      "hpMinAsc": 199,
+      "hpMaxAsc": 199
+    },
+    {
+      "id": "fuzzy_wurm_crawler",
+      "name": "Fuzzy Wurm Crawler",
+      "hpMin": 55,
+      "hpMax": 57,
+      "hpMinAsc": 58,
+      "hpMaxAsc": 59
+    },
+    {
+      "id": "globe_head",
+      "name": "Globe Head",
+      "hpMin": 148,
+      "hpMax": 148,
+      "hpMinAsc": 158,
+      "hpMaxAsc": 158
+    },
+    {
+      "id": "gremlin_merc",
+      "name": "Gremlin Merc",
+      "hpMin": 47,
+      "hpMax": 49,
+      "hpMinAsc": 51,
+      "hpMaxAsc": 53
+    },
+    {
+      "id": "fat_gremlin",
+      "name": "Fat Gremlin",
+      "hpMin": 13,
+      "hpMax": 17,
+      "hpMinAsc": 14,
+      "hpMaxAsc": 18
+    },
+    {
+      "id": "sneaky_gremlin",
+      "name": "Sneaky Gremlin",
       "hpMin": 10,
-      "hpMax": 15
+      "hpMax": 14,
+      "hpMinAsc": 11,
+      "hpMaxAsc": 15
+    },
+    {
+      "id": "haunted_ship",
+      "name": "Haunted Ship",
+      "hpMin": 63,
+      "hpMax": 63,
+      "hpMinAsc": 67,
+      "hpMaxAsc": 67
+    },
+    {
+      "id": "hunter_killer",
+      "name": "Hunter Killer",
+      "hpMin": 121,
+      "hpMax": 121,
+      "hpMinAsc": 126,
+      "hpMaxAsc": 126
+    },
+    {
+      "id": "inklet",
+      "name": "Inklet",
+      "hpMin": 11,
+      "hpMax": 17,
+      "hpMinAsc": 12,
+      "hpMaxAsc": 18
+    },
+    {
+      "id": "leaf_slime_small",
+      "name": "Leaf Slime (Small)",
+      "hpMin": 11,
+      "hpMax": 15,
+      "hpMinAsc": 12,
+      "hpMaxAsc": 16
+    },
+    {
+      "id": "leaf_slime_medium",
+      "name": "Leaf Slime (Medium)",
+      "hpMin": 32,
+      "hpMax": 35,
+      "hpMinAsc": 33,
+      "hpMaxAsc": 36
+    },
+    {
+      "id": "living_fog",
+      "name": "Living Fog",
+      "hpMin": 80,
+      "hpMax": 80,
+      "hpMinAsc": 82,
+      "hpMaxAsc": 82
+    },
+    {
+      "id": "gas_bomb",
+      "name": "Gas Bomb",
+      "hpMin": 7,
+      "hpMax": 7,
+      "hpMinAsc": 8,
+      "hpMaxAsc": 8
+    },
+    {
+      "id": "living_shield",
+      "name": "Living Shield",
+      "hpMin": 55,
+      "hpMax": 55,
+      "hpMinAsc": 65,
+      "hpMaxAsc": 65
+    },
+    {
+      "id": "louse_progenitor",
+      "name": "Louse Progenitor",
+      "hpMin": 134,
+      "hpMax": 136,
+      "hpMinAsc": 138,
+      "hpMaxAsc": 141
+    },
+    {
+      "id": "mawler",
+      "name": "Mawler",
+      "hpMin": 72,
+      "hpMax": 72,
+      "hpMinAsc": 76,
+      "hpMaxAsc": 76
+    },
+    {
+      "id": "myte",
+      "name": "Myte",
+      "hpMin": 61,
+      "hpMax": 67,
+      "hpMinAsc": 64,
+      "hpMaxAsc": 69
+    },
+    {
+      "id": "nibbit",
+      "name": "Nibbit",
+      "hpMin": 42,
+      "hpMax": 46,
+      "hpMinAsc": 44,
+      "hpMaxAsc": 48
+    },
+    {
+      "id": "ovicopter",
+      "name": "Ovicopter",
+      "hpMin": 124,
+      "hpMax": 130,
+      "hpMinAsc": 126,
+      "hpMaxAsc": 132
+    },
+    {
+      "id": "tough_egg",
+      "name": "Tough Egg",
+      "hpMin": 14,
+      "hpMax": 18,
+      "hpMinAsc": 15,
+      "hpMaxAsc": 19
+    },
+    {
+      "id": "hatchling",
+      "name": "Hatchling",
+      "hpMin": 19,
+      "hpMax": 22,
+      "hpMinAsc": 20,
+      "hpMaxAsc": 23
+    },
+    {
+      "id": "owl_magistrate",
+      "name": "Owl Magistrate",
+      "hpMin": 234,
+      "hpMax": 234,
+      "hpMinAsc": 243,
+      "hpMaxAsc": 243
+    },
+    {
+      "id": "punch_construct",
+      "name": "Punch Construct",
+      "hpMin": 55,
+      "hpMax": 55,
+      "hpMinAsc": 60,
+      "hpMaxAsc": 60
+    },
+    {
+      "id": "ruby_raider_assassin",
+      "name": "Ruby Raider (Assassin)",
+      "hpMin": 18,
+      "hpMax": 23,
+      "hpMinAsc": 19,
+      "hpMaxAsc": 24
+    },
+    {
+      "id": "ruby_raider_axe",
+      "name": "Ruby Raider (Axe)",
+      "hpMin": 20,
+      "hpMax": 22,
+      "hpMinAsc": 21,
+      "hpMaxAsc": 23
+    },
+    {
+      "id": "ruby_raider_brute",
+      "name": "Ruby Raider (Brute)",
+      "hpMin": 30,
+      "hpMax": 33,
+      "hpMinAsc": 31,
+      "hpMaxAsc": 34
+    },
+    {
+      "id": "ruby_raider_crossbow",
+      "name": "Ruby Raider (Crossbow)",
+      "hpMin": 18,
+      "hpMax": 21,
+      "hpMinAsc": 19,
+      "hpMaxAsc": 22
+    },
+    {
+      "id": "ruby_raider_tracker",
+      "name": "Ruby Raider (Tracker)",
+      "hpMin": 21,
+      "hpMax": 25,
+      "hpMinAsc": 22,
+      "hpMaxAsc": 26
+    },
+    {
+      "id": "scroll_of_biting",
+      "name": "Scroll of Biting",
+      "hpMin": 31,
+      "hpMax": 38,
+      "hpMinAsc": 32,
+      "hpMaxAsc": 39
+    },
+    {
+      "id": "seapunk",
+      "name": "Seapunk",
+      "hpMin": 44,
+      "hpMax": 46,
+      "hpMinAsc": 47,
+      "hpMaxAsc": 49
+    },
+    {
+      "id": "sewer_clam",
+      "name": "Sewer Clam",
+      "hpMin": 56,
+      "hpMax": 56,
+      "hpMinAsc": 58,
+      "hpMaxAsc": 58
+    },
+    {
+      "id": "shrinker_beetle",
+      "name": "Shrinker Beetle",
+      "hpMin": 38,
+      "hpMax": 40,
+      "hpMinAsc": 40,
+      "hpMaxAsc": 42
+    },
+    {
+      "id": "slimed_berserker",
+      "name": "Slimed Berserker",
+      "hpMin": 266,
+      "hpMax": 266,
+      "hpMinAsc": 276,
+      "hpMaxAsc": 276
+    },
+    {
+      "id": "slithering_strangler",
+      "name": "Slithering Strangler",
+      "hpMin": 53,
+      "hpMax": 55,
+      "hpMinAsc": 54,
+      "hpMaxAsc": 56
+    },
+    {
+      "id": "sludge_spinner",
+      "name": "Sludge Spinner",
+      "hpMin": 37,
+      "hpMax": 39,
+      "hpMinAsc": 41,
+      "hpMaxAsc": 42
+    },
+    {
+      "id": "slumbering_beetle",
+      "name": "Slumbering Beetle",
+      "hpMin": 86,
+      "hpMax": 86,
+      "hpMinAsc": 89,
+      "hpMaxAsc": 89
+    },
+    {
+      "id": "snapping_jaxfruit",
+      "name": "Snapping Jaxfruit",
+      "hpMin": 31,
+      "hpMax": 33,
+      "hpMinAsc": 34,
+      "hpMaxAsc": 36
+    },
+    {
+      "id": "spiny_toad",
+      "name": "Spiny Toad",
+      "hpMin": 116,
+      "hpMax": 119,
+      "hpMinAsc": 121,
+      "hpMaxAsc": 124
+    },
+    {
+      "id": "the_lost",
+      "name": "The Lost",
+      "hpMin": 93,
+      "hpMax": 93,
+      "hpMinAsc": 99,
+      "hpMaxAsc": 99
+    },
+    {
+      "id": "the_forgotten",
+      "name": "The Forgotten",
+      "hpMin": 106,
+      "hpMax": 106,
+      "hpMinAsc": 111,
+      "hpMaxAsc": 111
+    },
+    {
+      "id": "the_obscura",
+      "name": "The Obscura",
+      "hpMin": 123,
+      "hpMax": 123,
+      "hpMinAsc": 129,
+      "hpMaxAsc": 129
+    },
+    {
+      "id": "parafright",
+      "name": "Parafright",
+      "hpMin": 21,
+      "hpMax": 21,
+      "hpMinAsc": 21,
+      "hpMaxAsc": 21
+    },
+    {
+      "id": "thieving_hopper",
+      "name": "Thieving Hopper",
+      "hpMin": 79,
+      "hpMax": 79,
+      "hpMinAsc": 84,
+      "hpMaxAsc": 84
+    },
+    {
+      "id": "toadpole",
+      "name": "Toadpole",
+      "hpMin": 21,
+      "hpMax": 25,
+      "hpMinAsc": 22,
+      "hpMaxAsc": 26
+    },
+    {
+      "id": "tunneler",
+      "name": "Tunneler",
+      "hpMin": 87,
+      "hpMax": 87,
+      "hpMinAsc": 92,
+      "hpMaxAsc": 92
+    },
+    {
+      "id": "turret_operator",
+      "name": "Turret Operator",
+      "hpMin": 41,
+      "hpMax": 41,
+      "hpMinAsc": 51,
+      "hpMaxAsc": 51
+    },
+    {
+      "id": "twig_slime_s",
+      "name": "Twig Slime (S)",
+      "hpMin": 7,
+      "hpMax": 11,
+      "hpMinAsc": 8,
+      "hpMaxAsc": 12
+    },
+    {
+      "id": "twig_slime_m",
+      "name": "Twig Slime (M)",
+      "hpMin": 26,
+      "hpMax": 28,
+      "hpMinAsc": 27,
+      "hpMaxAsc": 29
+    },
+    {
+      "id": "two_tailed_rat",
+      "name": "Two-Tailed Rat",
+      "hpMin": 17,
+      "hpMax": 21,
+      "hpMinAsc": 18,
+      "hpMaxAsc": 22
+    },
+    {
+      "id": "vine_shambler",
+      "name": "Vine Shambler",
+      "hpMin": 61,
+      "hpMax": 61,
+      "hpMinAsc": 64,
+      "hpMaxAsc": 64
+    },
+    {
+      "id": "wriggler",
+      "name": "Wriggler",
+      "hpMin": 17,
+      "hpMax": 21,
+      "hpMinAsc": 18,
+      "hpMaxAsc": 22
     }
   ]
 }

@@ -1,6 +1,7 @@
 package com.froren.sts2encounters.data.dto
 import com.froren.sts2encounters.data.model.Enemy
 import com.froren.sts2encounters.data.model.EnemyId
+import com.froren.sts2encounters.data.model.HealthConstant
 import com.froren.sts2encounters.data.model.HealthRange
 import kotlinx.serialization.Serializable
 
@@ -10,10 +11,6 @@ data class EnemyDto(
     val name: String,
     val hpMin: Int,
     val hpMax: Int,
-)
-
-fun EnemyDto.toEnemy() = Enemy(
-    id = EnemyId(id),
-    name = name,
-    healthRange = HealthRange(hpMin, hpMax),
+    val hpMinAsc: Int,
+    val hpMaxAsc: Int,
 )
