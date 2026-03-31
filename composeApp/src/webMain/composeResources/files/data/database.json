@@ -1,0 +1,10 @@
+{
+  "enemies": [
+    {
+      "id": "test_enemy",
+      "name": "Test Enemy",
+      "hpMin": 10,
+      "hpMax": 15
+    }
+  ]
+}
